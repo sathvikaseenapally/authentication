@@ -9,7 +9,7 @@ app.use(express.urlencoded({extended: true}))
 app.use(express.static('public'))
 
 const mongoose = require('mongoose')
-mongoose.connect("mongodb://localhost:27017/secrets");
+mongoose.connect("mongodb://localhost:5000/secrets");
 const trySchema = new mongoose.Schema({
     email: String,
     password: String
